@@ -1,0 +1,394 @@
+// Sweet Pop Steel Guitar V5
+
+<control>
+label_cc20="MODO" label_cc7="Vol" label_cc10="Pan"
+label_cc21="Reverb" label_cc22="Delay" label_cc29="Chorus"
+label_cc24="Tone" label_cc23="Sat" label_cc80="PB Range"
+set_cc20=24 set_cc7=100 set_cc10=64
+set_cc24=127
+
+<global>
+sw_lokey=24 sw_hikey=32 sw_default=24
+sw_cc20=yes sw_step20=14
+amplitude_oncc7=100 pan_oncc10=100
+pbrange=2 pbrange_oncc80=10
+sustain_cc=64
+offset_random=200 pitch_random=5
+ampeg_attack=0.01 ampeg_vel2attack=-0.01
+ampeg_release=0.1 ampeg_release_oncc26=2.0
+ampeg_sustain=100
+fil_type=lpf_2p cutoff=120 cutoff_oncc24=20000
+eq1_freq=300 eq1_gain=-3 eq1_bw=2.0
+eq2_freq=3000 eq2_gain=2 eq2_bw=1.5
+eq3_freq=12000 eq3_gain=4 eq3_bw=1.0
+bus1_effect=reverb bus1_effect_mix=0 bus1_effect_mix_oncc21=100
+bus2_effect=delay bus2_effect_mix=0 bus2_effect_mix_oncc22=100 bus2_effect_time=0.35
+bus3_effect=distortion bus3_effect_mix=0 bus3_effect_mix_oncc23=100 bus3_effect_drive=5
+bus4_effect=chorus bus4_effect_mix=0 bus4_effect_mix_oncc29=100 bus4_effect_width=100
+effect1=100
+
+<group> trigger=attack bus1_effect_mix=0 bus2_effect_mix=0 bus3_effect_mix=0 bus4_effect_mix=0
+
+// === STUDIO CLEAN ===
+<group>
+sw_last=24 sw_label="STUDIO CLEAN"
+cutoff=20000 resonance=0 ampeg_attack=0.002 ampeg_release=0.4 eq1_gain=-2 eq2_gain=0 eq3_gain=3 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === FINGERSTYLE ===
+<group>
+sw_last=25 sw_label="FINGERSTYLE"
+cutoff=6000 ampeg_attack=0.015 ampeg_release=0.5 eq3_gain=-2 eq2_gain=3 volume=1
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === CHORUS DREAM ===
+<group>
+sw_last=26 sw_label="CHORUS DREAM"
+cutoff=20000 bus4_effect_mix=80 bus4_effect_width=100 ampeg_release=0.8 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === MUTED POP ===
+<group>
+sw_last=27 sw_label="MUTED POP"
+fil_type=lpf_2p cutoff=2000 resonance=5 ampeg_decay=0.15 ampeg_release=0.05 volume=4
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === AMBIENT SHIMMER ===
+<group>
+sw_last=28 sw_label="AMBIENT SHIMMER"
+cutoff=9000 ampeg_attack=0.2 ampeg_release=2.0 bus1_effect_mix=80 bus2_effect_mix=50 volume=-3
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === SLIDE STEEL ===
+<group>
+sw_last=29 sw_label="SLIDE STEEL"
+pbrange=12 ampeg_release=1.0 ampeg_sustain=100 bus4_effect_mix=0 volume=0
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === TRAP NOIR ===
+<group>
+sw_last=30 sw_label="TRAP NOIR"
+cutoff=800 resonance=10 ampeg_attack=0.04 ampeg_release=0.8 bus1_effect_mix=70 bus2_effect_mix=60 eq1_gain=4 volume=2
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === REGGAE ROOTS ===
+<group>
+sw_last=31 sw_label="REGGAE ROOTS"
+cutoff=12000 ampeg_release=0.1 ampeg_decay=0.2 eq2_gain=4 eq1_gain=-4 volume=1
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
+// === FUNK CARIOCA ===
+<group>
+sw_last=32 sw_label="FUNK CARIOCA"
+cutoff=20000 ampeg_attack=0.001 ampeg_release=0.2 eq1_gain=-10 eq3_gain=6 volume=2
+loop_mode=one_shot
+<region> sample=E3.wav key=52 pitch_keycenter=52
+lokey=36 hikey=52 lovel=1 hivel=127
+
+<region> sample=F3.wav key=53 pitch_keycenter=53
+lokey=53 hikey=54 lovel=1 hivel=127
+
+<region> sample=G3.wav key=55 pitch_keycenter=55
+lokey=54 hikey=56 lovel=1 hivel=127
+
+<region> sample=A3.wav key=57 pitch_keycenter=57
+lokey=56 hikey=58 lovel=1 hivel=127
+
+<region> sample=B3.wav key=59 pitch_keycenter=59
+lokey=58 hikey=59 lovel=1 hivel=127
+
+<region> sample=C4.wav key=60 pitch_keycenter=60
+lokey=60 hikey=61 lovel=1 hivel=127
+
+<region> sample=D4.wav key=62 pitch_keycenter=62
+lokey=61 hikey=63 lovel=1 hivel=127
+
+<region> sample=E4.wav key=64 pitch_keycenter=64
+lokey=63 hikey=64 lovel=1 hivel=127
+
+<region> sample=F4.wav key=65 pitch_keycenter=65
+lokey=65 hikey=66 lovel=1 hivel=127
+
+<region> sample=G4.wav key=67 pitch_keycenter=67
+lokey=66 hikey=68 lovel=1 hivel=127
+
+<region> sample=A4.wav key=69 pitch_keycenter=69
+lokey=68 hikey=70 lovel=1 hivel=127
+
+<region> sample=B4.wav key=71 pitch_keycenter=71
+lokey=70 hikey=84 lovel=1 hivel=127
+
