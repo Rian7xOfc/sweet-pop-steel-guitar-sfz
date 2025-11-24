@@ -11,7 +11,7 @@ A versão definitiva do Violão de Aço Virtual. Projetado para cobrir todos os 
 
 ## ⚠️ Requisitos
 Para ouvir os efeitos (Reverb, Delay, Chorus) e filtros corretamente, use:
-- **[sfizz](sfztools.github.io/sfizz/downloads/)** (Recomendado)
+- **[sfizz]** (Recomendado)
 - **Sforzando** (Funciona, mas pode ignorar alguns efeitos avançados)
 
 ## 📦 Instalação
@@ -48,3 +48,4 @@ Notas graves (Oitava 0) alteram o timbre instantaneamente:
 ---
 
 *Criado por {Rian7x}*
+
